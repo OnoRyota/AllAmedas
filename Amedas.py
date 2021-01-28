@@ -105,7 +105,7 @@ yuhuin[4].to_json('YuhuinNoAme.json',force_ascii=False)
 
 html_yuhuin = requests.get(url_yuhuin).content
 soup = BeautifulSoup(html_yuhuin,'html.parser')
-date_yuhun = soup.find(class_ = "td_title height2").get_text()
+date_yuhuin = soup.find(class_ = "td_title height2").get_text()
 date_yuhuin = date_yuhuin + "の気象情報"
 
 file = open('date_yuhuin.txt','w')
