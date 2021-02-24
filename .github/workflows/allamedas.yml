@@ -2,13 +2,13 @@
 name: allamedas
 
 # ワークフローの実行タイミング
-# この場合は 10 分に 1 回
+# この場合は 60 分に 1 回
 #
 # cron のフォーマットは以下が参考になる
 # http://manpages.ubuntu.com/manpages/trusty/ja/man5/crontab.5.html
 on:
   schedule:
-    - cron:  '*/10 * * * *'
+    - cron:  '*/60 * * * *'
 
 # ジョブの記述
 jobs:
